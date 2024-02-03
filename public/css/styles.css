@@ -1,0 +1,84 @@
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #22c55e7c;
+    /* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #22C55E;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.label__input {
+    position: relative;
+    /* position: absolute; */
+    margin: -15px 0px 0px 15px;
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+    width: fit-content;
+}
+.alert {
+    animation-name: ani-alert;
+    animation-duration: 0.5s;
+}
+@keyframes ani-alert {
+    from {
+        opacity: 80%;
+        margin-top: -50px;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+.alert-out{
+    animation-name: ani-alert-out;
+}
+@keyframes ani-alert-out {
+    to {
+        margin-top: -50px;
+    }
+}
+
+
+.offcanvas{
+    animation-name: ani-offcanvas;
+    animation-duration: 0.6s;
+}
+@keyframes ani-offcanvas {
+    from {
+        margin-right: -200px;
+    }
+    to {
+        margin-right: 0;
+    }
+}
+.offcanvas-out{
+    animation-name: ani-offcanvas-out;
+}
+@keyframes ani-offcanvas-out {
+    from {
+        margin-right: 0;
+    }
+    to {
+        margin-right: -200px;
+    }
+}
